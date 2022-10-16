@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Dashboard - REX Bank</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="shortcut icon" href="bankicon.png" type="image/x-icon">
+    <script src="js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+#imagecontainer{
+  background: transparent;
+  position: relative; 
+}
+#output{
+  border-radius: 50%;
+  opacity: 0;
+  width: 65px;
+  height: 65px;
+  position: absolute;
+  margin-top: -30px;
+}
+</style>
+<body onload="show()">
+  <section >
+    <nav class="navbar d-flex navbar-expand-lg navbar-light head position-relative">
+      <div class="m-auto">
+      <button class="btn dash position-absolute end-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+        <svg id="svg" xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-justify" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+      </svg>
+     </button>
+     <div class="container-fluid">
+      <a class="navbar text-decoration-none m-auto d-inline" href="http://rex-bank.netlify.app">
+        <img src="bankicon.png" alt="" class="icon mb-2"><h4 class="leads m-2 mt-3 d-inline">REX BANK</h4>
+      </a>
+      </div>
+    </div>   
+    </nav>   
+    <div class="d-md-flex d-sm-flex d-lg-flex justify-content-between align-items-center">
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <img src="bankicon.png" alt="" class="icon">
+      <h5 class="offcanvas-title log" id="offcanvasExampleLabel">REX BANK</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div>
+        <div class="container">
+          <div class="row pb-3">
+            <button type="button" class="btn btn-outline-primary hide" onclick="location.href='dashboard.html'">Balance</button>
+          </div>
+          <div class="row pb-3">
+            <button type="button" class="btn btn-outline-primary hide" onclick="trans()"> Fund Transfer</button>
+          </div>
+          <div class="row pb-3">
+            <button type="button" class="btn btn-outline-primary hide">User Information</button>
+          </div>
+          <div class="row pb-3">
+            <button type="button" class="btn btn-outline-primary ">Bank Statement</button>
+          </div>
+          <div class="row pb-3">
+            <button type="button" class="btn btn-outline-primary ">Loan/Mortages</button>
+          </div>
+          <div class="row pb-3">
+            <button type="button" class="btn btn-outline-primary " onclick=" makdep()">Make Deposit</button>
+          </div>
+          <div class="row pb-3">
+            <button type="button" class="btn btn-outline-primary ">Bank Cards</button>
+          </div>
+          <div class="row pb-3">
+            <button type="button" class="btn btn-outline-danger" onclick="logOut()">Logout</button>
+          </div>
+        </div> 
+      </div>
+    </div>
+  </div>
+  </section>
+  <section>
+    <div class="container-fluid pt-3" id="con">
+      <div class="container bg-light pt-5 pb-5" style="height: 82vh;">
+        <div id="imagecontainer" onchange="return loadFile(event)">
+          <input type="file" accept="image/*" name="image" id="file" style="border: none; display: none;"> 
+         <label for="file"  id="file2" style="cursor: pointer; border: none;  display: block;">
+          <img class="img2" src="male.webp" alt=""></label> 
+        <img src="" alt=" " id="output"></div>
+        <div class="container mt-5">
+          <div class="row ">
+            <p id="demo1" style="font-size: 20px; font-family: dancing;">oo</p>
+          </div> <br><br>
+          <div class="lead">
+            <p style="display: inline; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 20px; font-weight: 900; color: indigo;" id="demo2">Balance: <p onload="see()" id="userBalance" style="display: inline; font-size: 2em; font-family: monospace;">1000</p><p style="display: inline;"><sub>USD</sub></p></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <footer class="footer bg-dark p-2 text-white text-center postion-relative" id="foot">
+      <div class="container">
+          <p style="font-size: 13px; margin-top: 5px; font-family: Verdana, Geneva, Tahoma, sans-serif;">&copy; 2022 REX BANK</p>
+      </div>
+  </footer>
+  </section>
+  <script src="main.js"></script>      
+</body>
+</html>

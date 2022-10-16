@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-5.1.3-dist/css/bootstrap.min.css">
+    <script src="./bootstrap-5.1.3-dist/js/bootstrap.bundle.js"></script> 
+     <script src="main.js"></script>
+
+</head>
+<style>
+    div{
+        margin-top: 30vh;
+        border: thin solid indigo;
+        border-radius: 10px;
+        min-width: 60%;
+        padding: 50px;
+        background: rgb(120, 70, 170, .3);
+        height: 30vh;
+    }
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+    }
+     input[type=text]{
+        border-radius: 5px;
+        border: none;
+        width: 50%;
+    }
+    input{
+        width: 30%;
+        border-radius: 5px;
+        border: none;
+        padding: 5px;
+    }
+    button{
+        margin-top: 50px;
+        border-radius: 5px;
+        border: none;
+        background: indigo;
+        padding: 10px;
+        color: white;
+    }
+</style>
+<body>
+    <!-- <div class="container-fluid transBack">
+        <div class="container-fluid bg-dark mt-5 p-5 tp d-none d-sm-block .d-md-none">
+            <div class="container bg-light ty p-5 ">
+                <form>
+                    <div class="mb-3">
+                     <input type="number" placeholder="enter your amount" class="transIn" id="userInput">
+                    </div>
+                    <button class="btn btn-outline-primary" onclick="transfer()">transfer</button>
+                  </form>
+            </div>
+          </div>
+    </div> -->
+    <div>
+        Name of recipient: <input id="userID" type="text"> <br><br>
+        Purpose<p style="color: rgb(120, 90, 70, .5); display: inline;">(optional)</p>: <input type="text"> <br><br>
+        Amount: <input type="number"  id="userInput"><br>
+        <p id="say" style="color: red; text-align: center; font-size: 15px;"></p>
+        <p id="say2" style="color: green; text-align: center; font-size: 16px;"></p>
+        <button onclick="transfer()">Transfer</button>
+    </div>
+</body>
+</html>

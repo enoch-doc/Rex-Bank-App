@@ -1,0 +1,307 @@
+@font-face {
+    font-family: raleway;
+    src: url(Raleway-Black.ttf);
+}
+@font-face {
+    font-family: dancing;
+    src: url(DancingScript-Regular.ttf);
+}
+*{
+    font-family: raleway;
+}
+
+body{
+    user-select: none;
+    background-image: url(bitcoin-innovative-payment-network-new-kind-money-analyzing-data-finance-business-economic-digital-graph-icon-160462986.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: change;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+@keyframes change {
+    0%{
+      background-image: url(businessman-mobile-smartphone-credit-card-hand-paying-online-shopping-virtual-interface-global-network-online-bank-246629863.jpg);
+    }
+    25%{
+      background-image: url(businessman-using-tablet-piggy-bank-miniature-wood-home-technology-interface-finance-money-saving-future-concepts-183838663.jpg);
+    }
+    50%{
+      background-image: url(hand-pushing-button-touch-screen-concept-security-internet-33411104.jpg);
+    }
+    75%{
+      background-image: url(hands-using-mobile-payments-digital-marketing-banking-network-online-shopping-icon-customer-networking-connection-virtual-117351865.jpg);
+    }
+    100%{
+      background-image: url(man-doing-online-shopping-credit-card-laptop-45727390.jpg);
+    }
+  }
+@keyframes you {
+    from{
+      color: rgb(183, 0, 255);
+    }
+    to{
+      color: maroon;
+    }
+    
+  }
+@keyframes welcome{
+    0%{
+      color: mediumblue;
+      opacity: 0;
+    }
+    25%{
+        color: rgb(130, 16, 145);
+        opacity: 0.4;
+        transform: scale(1);
+    }
+    50%{
+        color: rgb(205, 191, 0);
+        opacity: 0.6;
+    }
+    75%{
+        color: rgb(205, 48, 0);
+        opacity: 0.8;
+    }
+    100%{
+        color: rgb(11, 87, 90);
+        opacity: 1;
+    }
+  }
+@keyframes rex{
+    from{
+        color: mediumblue;
+        opacity: 0;
+      }
+      to{
+          color: rgb(181, 0, 205);
+          opacity: 0.6;
+      }
+  }
+
+#fluid{
+    border: thin solid transparent;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px gray;
+    height: 70vh;
+    margin-top: 95px;
+    background-color: rgba(240, 248, 255, 0.93);
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+ .bank{
+    font-size: 3.4em;
+    color: indigo;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+#fluid img{
+    display: inline;
+    margin-top: 25px;
+    height: 50px;
+    width: 50px;
+}
+.you{
+    font-family: cursive;
+    font-size: 2em;
+    animation-name: you;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+.welcome{
+    font-size: 3em;
+    color: lightseagreen;
+    animation-name: welcome;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+.rex{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    font-weight: 800;
+    animation-name: rex;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+    animation-fill-mode: backwards;
+}
+.contain{
+    margin-top: -30px;
+}
+.pay{
+    font-size: 20px;
+    color: rgb(175, 45, 175);
+    font-family: dancing;
+    margin-top: -50px;
+    margin-left: 80px;
+}
+.sign{
+    cursor: pointer;
+    font-size: 1.1em;
+    width: fit-content;
+    border: thin solid rebeccapurple;
+    border-radius: 10px;
+    margin: auto;
+    padding: 12px;
+    color: rebeccapurple;
+    letter-spacing: 2px;
+}
+.sign h6{
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+}
+.sign:hover{
+    background-color: rebeccapurple;
+    color: white;
+}
+.sign:active{
+    outline-color: wheat;
+    outline-style: solid;
+    outline-width: 5px;
+}
+.comp{
+    font-size: 10px;
+    right: 0;
+    padding-right: 60px;
+    position: absolute;
+    bottom: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+}
+.disp{
+    margin-top: 70px;
+    font-size: 2em;
+    color: rgb(59, 10, 78);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} #demo{
+    font-family: dancing;
+    color: rgb(43, 6, 92);
+    font-weight: 900;
+}
+#invalid, #invalid1, #invalid2{
+    color: red;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.head{
+    background-color: #87adfe;
+}
+.log{
+    color: rgb(144, 44, 215);
+    font-size: 2em;
+}
+.can{
+    width: 50px;
+}
+.icon{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+.contain{
+    padding-bottom: 2px;
+}
+.leads{
+    font-size: 2.3em;
+    color: indigo;
+}
+
+.background{
+    display: flex;
+}
+.dash{
+    background-color:  indigo;
+    margin-right: 20px;
+    margin-top: 8px;
+    
+} .dash:hover{
+    opacity: 0.8;
+}
+ .img2, #imagecontainer{
+    justify-items: center;
+    margin-top: -10px;
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    background-color: rgb(127, 188, 238);
+    padding: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    cursor: pointer;
+}
+#svg{
+    color: white;
+}
+#con{
+    background-color: rgba(240, 248, 255, 0.93);
+    height: 86.1vh;
+}
+#foot{
+    height: 40px;
+}
+#offcanvasExample{
+    background-color: rgb(255, 251, 255);
+    width: 80%;
+}
+@media screen and (max-width: 600px) {
+    .bank{
+       font-size: 2em;
+       text-align: center;
+   }
+   #svg{
+       width: 20px;
+       height: 20px;
+       margin-top: -20px;
+       color: indigo;
+   }
+   .dash{
+       background-color: transparent;
+       height: 30px;
+   }
+   .icon{
+       width: 30px;
+       height: 30px;
+   }
+   .leads{
+       font-size: 20px;
+   }
+   #fluid img{
+    display: inline;
+    margin-top: 13px;
+    height: 34px;
+    width: 34px;
+    }
+    .welcome{
+        font-size: 1.7em;
+    }
+    .rex{
+        font-size: 1em;
+        font-weight: 600;
+    }
+    .pay{
+        margin-top: -32px;
+        font-size: 16px;
+    }
+     .sign h6{
+        font-size: 11px;
+        letter-spacing: 0;
+        font-weight: 700;
+        margin: auto;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .sign{
+        border-radius: 5px;
+        padding: 7px;
+        margin-top: 30px;
+    }
+}

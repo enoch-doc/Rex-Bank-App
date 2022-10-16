@@ -1,0 +1,266 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="bankicon.png" type="image/x-icon">
+    <title>Log In - REX Bank</title>
+    <style>
+@font-face {
+    font-family: raleway;
+    src: url(Raleway-Black.ttf);
+}
+@font-face {
+    font-family: dancing;
+    src: url(DancingScript-Regular.ttf);
+}
+body{
+    user-select: none;
+    background-image: url(bitcoin-innovative-payment-network-new-kind-money-analyzing-data-finance-business-economic-digital-graph-icon-160462986.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: change;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+@keyframes change {
+    0%{
+      background-image: url(businessman-mobile-smartphone-credit-card-hand-paying-online-shopping-virtual-interface-global-network-online-bank-246629863.jpg);
+    }
+    25%{
+      background-image: url(businessman-using-tablet-piggy-bank-miniature-wood-home-technology-interface-finance-money-saving-future-concepts-183838663.jpg);
+    }
+    50%{
+      background-image: url(hand-pushing-button-touch-screen-concept-security-internet-33411104.jpg);
+    }
+    75%{
+      background-image: url(hands-using-mobile-payments-digital-marketing-banking-network-online-shopping-icon-customer-networking-connection-virtual-117351865.jpg);
+    }
+    100%{
+      background-image: url(man-doing-online-shopping-credit-card-laptop-45727390.jpg);
+    }
+  }
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    box-sizing: border-box;
+    background-color: ivory;
+}
+input[type=text]:active, input[type=password]:focus {
+    background-color: whitesmoke;
+}
+.button2 {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 15px;
+    padding: 14px 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.button2:hover {
+    opacity: 0.8;
+} .button2:active{
+    outline: solid 4px rgb(255, 153, 0);
+}
+#container {
+    padding: 16px;
+    background-color: rgba(240, 248, 255, 0.93);
+    color: indigo;
+    font-size: 17px;
+    font-family: raleway;
+}
+
+#container2{
+    padding: 14px;
+    height: 40px;
+    text-align: center;
+    background-color: rgb(173, 179, 197);
+}
+#psw{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(20, 60, 238);
+    font-weight: 600;
+}
+span#psw a{font-size: 16px; margin-left: 10px;  font-weight:600; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;} 
+span#psw a:hover{text-decoration: none; color: rgb(174, 0, 255);}
+
+span a#fpsw{
+    float: right;
+    font-size: 17px;
+    color: indigo;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+span a#fpsw:hover{text-decoration: none; color: rgb(255, 0, 34);}
+
+#modal {
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+    padding-top: 30px;
+}
+
+main {
+    background-color: rgba(240, 248, 255, 0.93);
+    margin: 5% auto 5% auto; 
+    border: 1px solid #888;
+    width: 80%; 
+    position: relative;
+    box-shadow: 1px 0.5px gray;
+    -webkit-animation: animatezoom 0.6s; 
+    animation: animatezoom 0.6s 
+}
+.pay{
+    font-size: 20px;
+    color: rgb(54, 45, 175);
+    font-family: dancing;
+    margin-top: -50px;
+    margin-left: 80px;
+}
+#close{
+    position: absolute;
+    right: 15px;
+    top: 0;
+    color: indigo;
+    font-size: 35px;
+    font-weight: bold;
+}
+#close:hover,
+#close:focus {
+    color: red;
+    cursor: pointer;
+}
+#fluid{
+    border: thin solid transparent;
+    border-radius: 5px;
+    background-color: rgba(240, 248, 255, 0.93);
+    padding: 10px;
+    text-align: center;
+    overflow: hidden;
+    margin: auto;
+}
+ .bank{
+    font-size: 3.4em;
+    color: indigo;
+    margin-top: 15px;
+    margin-left: 10px;
+    font-family: raleway;
+}
+#fluid img{
+    display: inline;
+    margin-top: 25px;
+    height: 50px;
+    width: 50px;
+}
+span.c{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 13px; color: rgb(61, 15, 7);
+    text-align: center;
+    font-size: 15px;
+}
+#invalid, #invalid1, #invalid2{
+    color: red;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+@media screen and (max-width: 600px) {
+    .bank{
+        font-size: 2.3em;
+    }
+    .pay{
+        font-size: 17px;
+        margin-top: -20px;
+    }
+    span a#fpsw{
+        font-size: 14px;
+    }
+    span.c{
+        font-size: 14px;
+    }
+    #close{
+        font-size: 30px;
+        margin-right: -7px;
+        margin-top: -5px;
+    }
+    #psw, span#psw a{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 480px) {
+    #psw, span#psw a{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 320px) {
+    #psw, span#psw a{
+        font-size: 12px;
+    }
+    span.c{
+        font-size: 10px;
+    }#container2{
+        height: fit-content;
+    }
+}
+</style>
+</head>
+<body>
+    <div  id="modal">
+        <main>
+            <div id="fluid">
+                <img src="bankicon.png" width="50" height="50" alt="">
+                <p class="bank">REX BANK</p>
+                <p class="pay">...the better way to bank</p>
+                <hr>
+            </div>
+        <span onclick="closeIt()" id="close" title="Close Modal">&times;</span>
+    <div id="container">
+      <label for="uname"><b>E-mail</b></label>
+      <input type="text" placeholder="you@example.com" autocomplete="off" id="userMail"><br><br>
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter 6 characters or more" id="psword">
+        <div id="invalid">User Not Found!<br>Enter correct details!</div>
+        <p id="invalid1"></p>
+        <!-- <div id="invalid1">Kindly enter your details!</div> -->
+        <div id="invalid2">Login details not found!<br>Sign up <a href='banksignup.html'>here</a></div>
+      <input type="submit" onclick="logIn()" value="Login" class="button2">
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> <p style="display: inline; font-size: 15px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Remember me</p>
+      </label>
+      <span><a target="_blank" href="forgot.html" id="fpsw">Forgot password?</a></span> 
+    </div>
+    <div id="container2">
+      <span id="psw">Don't have an account yet? <a href="banksignup.html">Sign up</a></span><br><br>
+      <span class="c">© REX Bank 2022</span>
+    </div>
+</main>
+<script src="main.js">
+</script>
+</body>
+</html>
